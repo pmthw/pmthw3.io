@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: right;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Hình tròn */
+        }
+
+        /* About Section */
+        #about {
+            background-color: #f4f4f4;
+            padding-top: 60px;
+        }
+
+        #about img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #333;
+            color: white;
+        }
+
+        #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #projects li {
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Achievements Section */
+        #achievements {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Education Section */
+        #education {
+            background-color: #333;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            text-align: left;
+            padding: 10px;
+            border-left: 4px solid #4CAF50; 
+        }
+
+        li:hover {
+            background-color: #e0e0e0;
+        }
+
+        li strong {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: white;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+        }
+        input:focus, textarea:focus {
+            border-color: #45a049;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a> <!-- Thêm liên kết tới Education -->
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="p.jpg" alt="Profile picture of Sandeep Jain, a tech enthusiast">
+        <p>I am a student at the School of Information & Communication Technology at Can Tho University. 
+            I majored in Data Communication and Computer Networks.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="link-to-p1" style="color: white;">Project 1</a></li>
+            <li><a href="link-to-p2" style="color: white;">Project 2</a></li>
+            <li><a href="link-to-p3" style="color: white;">Project 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>
+                <strong>Website management intern at Nguyen Vu store</strong>
+                <span>June - August 2024</span>
+            </li>
+            <li>
+                <strong>Website management and marketing intern at Nguyen Vu store</strong>
+                <span>Present</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Nguyen Viet Dung High School</strong>
+                <span>2017 - 2020</span>
+            </li>
+            <li>
+                <strong>Can Tho University</strong>
+                <span>2020 - 2025</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Thank you for your message, ${name}! We'll get back to you shortly.`);
+            
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
